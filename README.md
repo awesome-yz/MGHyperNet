@@ -39,8 +39,8 @@ Save visual and text features in the folder **data**
 
 
 ```
-Get groundtruths from [here](https://onedrive.live.com/?authkey=%21AHLyTWgDJJOW24A&id=2159F1430FCCC356%21538526&cid=2159F1430FCCC356&sb=name&sd=1)  
-Save lists and groundtruths in the folder **list**:
+Get ground truths from [here](https://onedrive.live.com/?authkey=%21AHLyTWgDJJOW24A&id=2159F1430FCCC356%21538526&cid=2159F1430FCCC356&sb=name&sd=1)  
+Save lists and ground truths in the folder **list**:
 ```bash
 ├── gt-ped2.npy
 ├── gt-sh2.npy
@@ -57,7 +57,7 @@ Alter paths in the lists according to the path of the **data** directory.
 
 ## Training and Evaluation
 
-To train and evaluate the model, run this command (e.g on ShanghaiTech benchmark):
+To train and evaluate the model, run this command (e.g on the ShanghaiTech benchmark):
 
 ```train and evaluate
 python main.py --config ./configs/sh_config.yaml 

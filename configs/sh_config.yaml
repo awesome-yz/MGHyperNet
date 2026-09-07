@@ -1,0 +1,60 @@
+feat-extractor: 'i3d' 
+feature_size: 2048
+modality: 'RGB'
+test_rgb_list: null
+gt: null
+batch_size: 32 # reduced for debugging (from 32)
+workers: 4
+model_name: 'hypad'
+pretrained_ckpt: null
+num_classes: 1
+dataset: 'shanghaitech_v2'
+save_test_results: False
+emb_folder: 'sent_emb_n'
+emb_dim: 768
+to_hyp: True
+ncrops: 10
+margin: 1.0
+normal_weight: 1.0
+abnormal_weight: 1.0
+clip_emb: null
+output_folder: './output/sh/'
+ckpt: './ckpt/sh/'
+
+#Tuneable Hyperparameters
+#4869, 4090, 42, 1337, 2026
+seed: 4869  
+weight_decay: 0.0
+lr: 0.001
+dropout: 0.5
+alpha: 0.20
+beta: 0.80
+train_x: False
+train_c: True
+c: 1.0
+attn_feat_size: 2048
+epochs: 1000
+attn_module: hyperbolic
+use_attn: False
+mag_loss: True
+text: True
+attn_loss: False
+optimizer: 'adam'
+momentum: 0.9
+min_lr: 2e-6
+linear_feat_size: 2048
+evaluate_seeds: True
+
+# Hyperbolic GCN parameters
+manifold: 'Hyperboloid'
+act: 'relu'
+use_gcn_attn: True
+input_features: ['text', 'visual']  # ['text', 'visual']
+gcn_dropout: 0.3
+local_agg: True
+gcn_layers_vfeats: [2048, 1024]
+gcn_layers_tfeats: [768, 384]
+seq_length: 32
+
+
+

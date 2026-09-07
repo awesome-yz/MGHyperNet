@@ -6,7 +6,7 @@ and [Hyperbolic Image Embeddings](https://github.com/leymir/hyperbolic-image-emb
 
 
 
-![HypVAD](https://github.com/user-attachments/assets/d0709302-728d-4b14-a518-c386f63b734b)
+<img width="4477" height="1196" alt="GraphHypVAD" src="https://github.com/user-attachments/assets/34a7a8e2-91b2-4cef-8794-4ae82a28c495" />
 
 
 ## Requirements

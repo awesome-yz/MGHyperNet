@@ -1,6 +1,6 @@
 
 # Multimodal Hyperbolic Multiple Instance Learning for Video Anomaly Detection
-This is an official repo for 'Multimodal hyperbolic MIL for Video Anomaly Detection'  
+This is an official repo for 'Multimodal Graph Hyperbolic MIL for Video Anomaly Detection'  
 The implementation is based on [TEVAD: Improved video anomaly detection with captions](https://github.com/coranholmes/TEVAD)
 and [Hyperbolic Image Embeddings](https://github.com/leymir/hyperbolic-image-embeddings)
 

@@ -19,7 +19,6 @@ def main(args):
     """Main function to train and test the model.
     Implementation based on TEVAD (https://github.com/coranholmes/TEVAD/blob/main/main.py)
     """
-    import pdb; pdb.set_trace()
     seed_everything(args.seed)
     if args.emb_folder == "":
         sb_pt_name = "vatex"

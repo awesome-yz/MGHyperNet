@@ -7,5 +7,3 @@
 3) To run the code for specific benchmark replace the config option with the respective configuration file provide in the folder 'configs':
 
 ``python main.py --config ./configs/sh_config.yaml``
-
-Weights of the main results are provided in the folder named 'saved_weights'.

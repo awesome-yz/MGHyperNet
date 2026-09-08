@@ -84,13 +84,13 @@ class Dataset(data.Dataset):
         features = np.array(features, dtype=np.float32)
 
         if 'ucf' in self.dataset:
-            text_path = "/scratch/yuz19/Data/save/Crime/" + self.emb_folder + "/" + i3d_path.split("/")[-1][:-7]+"emb.npy"
+            text_path = "/Data/save/Crime/" + self.emb_folder + "/" + i3d_path.split("/")[-1][:-7]+"emb.npy"
         elif 'shanghai' in self.dataset:
-            text_path = "/scratch/yuz19/Data/save/ShanghaiTech/" + self.emb_folder + "/" + i3d_path.split("/")[-1][:-7]+"emb.npy"
+            text_path = "/Data/save/ShanghaiTech/" + self.emb_folder + "/" + i3d_path.split("/")[-1][:-7]+"emb.npy"
         elif 'ped2' in self.dataset:
-            text_path = "/scratch/yuz19/Data/save/UCSD_Ped2/" + self.emb_folder + "/" + i3d_path.split("/")[-1][:-7]+"emb.npy"
+            text_path = "/Data/save/UCSD_Ped2/" + self.emb_folder + "/" + i3d_path.split("/")[-1][:-7]+"emb.npy"
         elif 'violence' in self.dataset:
-            text_path = "/scratch/yuz19/Data/save/Violence/" + self.emb_folder + "/" + i3d_path.split("/")[-1][:-7]+"emb.npy"
+            text_path = "/Data/save/Violence/" + self.emb_folder + "/" + i3d_path.split("/")[-1][:-7]+"emb.npy"
         else:
             raise Exception("Dataset undefined!!!")
         text_features = np.load(text_path, allow_pickle=True)

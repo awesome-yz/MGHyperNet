@@ -41,8 +41,9 @@ attn_loss: False
 optimizer: 'adam'
 momentum: 0.9
 min_lr: 1e-6
-linear_feat_size: 512
+linear_feat_size: 2048
 evaluate_seeds: False
+multimodal: True
 
 # Hyperbolic GCN parameters
 manifold: 'Hyperboloid'
@@ -51,6 +52,6 @@ use_gcn_attn: True
 input_features: ['text', 'visual']  # ['text', 'visual']
 gcn_dropout: 0.3
 local_agg: True
-gcn_layers_vfeats: [2048, 1024, 512]
-gcn_layers_tfeats: [768, 384, 192 ]
+gcn_layers_vfeats: [2048, 1024]
+gcn_layers_tfeats: [768, 384]
 seq_length: 32

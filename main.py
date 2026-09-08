@@ -1,7 +1,6 @@
 from torch.utils.data import DataLoader
 import torch.optim as optim
 from model import Model
-# from improved_model import Model
 from dataset import Dataset
 from train import train
 from test import test
@@ -13,7 +12,6 @@ import argparse
 from torch.optim.lr_scheduler import CosineAnnealingWarmRestarts, CosineAnnealingLR
 import time
 import numpy as np
-from evaluate_best_checkpoints import evaluate_saved_seeds
 import sys
 
 
@@ -21,6 +19,7 @@ def main(args):
     """Main function to train and test the model.
     Implementation based on TEVAD (https://github.com/coranholmes/TEVAD/blob/main/main.py)
     """
+    import pdb; pdb.set_trace()
     seed_everything(args.seed)
     if args.emb_folder == "":
         sb_pt_name = "vatex"
@@ -205,11 +204,8 @@ if __name__ == '__main__':
     
     if '--seed' in sys.argv:
         args.seed = cmd_args.seed
-        print(f"--> [MHyperNet] Terminal override: Forcing active seed to {args.seed}")
    
     main(args)
-    if args.evaluate_seeds:
-        evaluate_saved_seeds(args)
 
    
     
